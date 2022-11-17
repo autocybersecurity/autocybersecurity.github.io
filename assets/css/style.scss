@@ -1,0 +1,55 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+@mixin relative-font-size($ratio) {
+  font-size: #{$ratio}rem;
+}
+
+$brand-color:#00A19B;
+
+
+a {
+    color:$brand-color;
+}
+
+a small {
+  color:$brand-color;
+}
+
+a:hover small {
+  color:$brand-color;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color:#355AAA;
+}
+
+.grey {
+  color: #828282;
+}
+
+.svg-icon {
+  width: 1.25em;
+  height: 1.25em;
+  display: inline-block;
+  fill: $brand-color;
+  vertical-align: text-bottom;
+}
+
+.social-media-list  {
+    text-decoration: none;
+    list-style: none;
+    display:inline-flex;    
+    .username {
+        text-decoration: underline;
+    }
+}
+
+.social-links {
+  @include relative-font-size(0.9375);
+  color: $brand-color;
+
+}
